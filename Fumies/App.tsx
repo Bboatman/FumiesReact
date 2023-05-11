@@ -24,6 +24,8 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import {store} from './src/app/store';
+import {Provider} from 'react-redux';
 
 import {Perfume} from './src/components/Perfume';
 

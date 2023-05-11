@@ -10,7 +10,7 @@ const initialState: PerfumeState = {
 };
 
 export const perfumeSlice = createSlice({
-  name: 'perfume', // has to be unique! "key to the slice"
+  name: 'perfume',
   initialState,
   reducers: {
     increment: state => {
@@ -32,4 +32,4 @@ export const perfumeSlice = createSlice({
 // Action creators are generated for each case reducer function
 export const {increment, decrement, incrementByAmount} = perfumeSlice.actions;
 
-export default perfumeSlice.reducer;
+export const perfumeReducer = perfumeSlice.reducer;

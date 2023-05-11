@@ -1,5 +1,5 @@
 import {configureStore} from '@reduxjs/toolkit';
-import perfumeReducer from './slices/perfume';
+import {perfumeReducer} from '../slices/perfume';
 
 export const store = configureStore({
   reducer: {
