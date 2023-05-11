@@ -1,12 +1,15 @@
 import {createSlice} from '@reduxjs/toolkit';
 import type {PayloadAction} from '@reduxjs/toolkit';
+import {Perfume} from '../common/types/Perfume.type';
 
 export interface PerfumeState {
   value: number;
+  perfumes: Perfume[];
 }
 
 const initialState: PerfumeState = {
   value: 0,
+  perfumes: [],
 };
 
 export const perfumeSlice = createSlice({
@@ -14,10 +17,6 @@ export const perfumeSlice = createSlice({
   initialState,
   reducers: {
     increment: state => {
-      // Redux Toolkit allows us to write "mutating" logic in reducers. It
-      // doesn't actually mutate the state because it uses the Immer library,
-      // which detects changes to a "draft state" and produces a brand new
-      // immutable state based off those changes
       state.value += 1;
     },
     decrement: state => {
