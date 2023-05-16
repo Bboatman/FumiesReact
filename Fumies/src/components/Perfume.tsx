@@ -1,8 +1,8 @@
 import React from 'react';
 import type {RootState} from '../app/store';
 import {useSelector, useDispatch} from 'react-redux';
-import {decrement, increment} from '../app/slices/perfume';
-import {StyleSheet, View, Text, Button} from 'react-native';
+import {View, Text, Button} from 'react-native';
+import {decrement, increment} from '../slices/perfume';
 
 export function Perfume() {
   const count = useSelector((state: RootState) => state.perfume.value);
