@@ -1,7 +1,8 @@
 export interface Perfume {
+  id: string | undefined;
   name: string;
-  house: string;
-  description: string;
+  house: string | undefined;
+  description: string | undefined;
   notes: Note[];
 }
 
